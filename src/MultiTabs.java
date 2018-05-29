@@ -1,7 +1,7 @@
-class Multitabs
+public class MultiTabs
 {
     private int result;
-    void PrintConsole(){
+    public void PrintConsole(){
         for (int x = 1; x <= 10; x++) {
             for (int y = 1; y <= 10; y++) {
                 result = x * y;
