@@ -2,7 +2,7 @@ public class Lab2 {
 
     public static void main(String[] args)
     {
-        IntChecker isint = new IntChecker();
+        NumChecker isint = new NumChecker();
         isint.console();
     }
 
