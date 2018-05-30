@@ -1,15 +1,17 @@
+import sun.awt.geom.AreaOp;
+
 import java.util.*;
 
-public class IsInt {
+public class IntChecker {
 
-    public IsInt() {
+    public IntChecker() {
     }
 
     public void console() {
 
         Scanner in = new Scanner(System.in);
 
-        if (check(in.nextLine())) {
+        if (test(in.nextLine())) {
             System.out.println("Число");
         } else {
             System.out.println("Не число");
@@ -18,9 +20,9 @@ public class IsInt {
 
     }
 
-    public boolean check(String test) {
+    public boolean test(String number) {
         try {
-            Integer.parseInt(test);
+            Integer.parseInt(number);
 
             return true;
         } catch (NumberFormatException nfe) {
